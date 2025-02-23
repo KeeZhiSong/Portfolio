@@ -65,7 +65,7 @@ export default function ContactForm() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold sm:text-4xl mb-4">
-            <span className="bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
               Connect with Me!
             </span>
             <span className="ml-2">👋</span>
@@ -88,7 +88,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel className="text-gray-100">Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} />
+                      <Input placeholder="John Doe" {...field} className="text-white placeholder-gray-400" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -101,7 +101,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel className="text-gray-100">Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="john@example.com" {...field} />
+                      <Input placeholder="john@example.com" {...field} className="text-white placeholder-gray-400" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -114,7 +114,7 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel className="text-gray-100">Phone Number</FormLabel>
                     <FormControl>
-                      <Input placeholder="+65 0000-0000" {...field} />
+                      <Input placeholder="+65 0000-0000" {...field} className="text-white placeholder-gray-400" />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -127,7 +127,11 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel className="text-gray-100">Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Tell me about your project..." className="min-h-[120px]" {...field} />
+                      <Textarea
+                        placeholder="Tell me about your project..."
+                        className="min-h-[120px] text-white placeholder-gray-400"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

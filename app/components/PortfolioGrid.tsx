@@ -10,36 +10,42 @@ const projects = [
     title: "Interactive Loading Screen",
     description: "Revamping the loading process to create an engaging and enjoyable experience for users!",
     imageUrl: "/images/pic2.jpeg",
+    link: "https://kahei9299.github.io/HacknRoll/index.html",
   },
   {
     id: 2,
     title: "Project 2",
     description: "Description for Project 2",
     imageUrl: "/images/pic3.jpeg",
+    link: "https://example.com/project2",
   },
   {
     id: 3,
     title: "Project 3",
     description: "Description for Project 3",
     imageUrl: "/images/pic3.jpeg",
+    link: "https://example.com/project3",
   },
   {
     id: 4,
     title: "Project 4",
     description: "Description for Project 4",
     imageUrl: "/images/pic3.jpeg",
+    link: "https://example.com/project4",
   },
   {
     id: 5,
     title: "Project 5",
     description: "Description for Project 5",
     imageUrl: "/images/pic3.jpeg",
+    link: "https://example.com/project5",
   },
   {
     id: 6,
     title: "Project 6",
     description: "Description for Project 6",
     imageUrl: "/images/pic3.jpeg",
+    link: "https://example.com/project6",
   },
 ]
 
@@ -107,7 +113,7 @@ export default function PortfolioGrid() {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-100 mb-2">{project.title}</h3>
                   <a
-                    href="https://www.flowersandsaints.com.au"
+                    href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white hover:text-blue-300 transition-colors duration-300 inline-flex items-center"
