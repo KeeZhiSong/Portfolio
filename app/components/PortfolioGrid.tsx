@@ -14,10 +14,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Project 2",
-    description: "Description for Project 2",
-    imageUrl: "/images/pic3.jpeg",
-    link: "https://example.com/project2",
+    title: "Codecraft",
+    description: "VSCODE Extension that provides coding help without explicity giving the user the answer!",
+    imageUrl: "/images/pic4.jpeg",
+    link: "https://github.com/KeeZhiSong/CodeCraft",
   },
   {
     id: 3,
