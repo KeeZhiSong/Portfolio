@@ -58,7 +58,14 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
+            <span
+              className="text-transparent bg-clip-text"
+              style={{
+                background: "linear-gradient(to right, #4facfe, #00f2fe)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+              }}
+            >
               {"I'm\nZhi Song!"}
             </span>
           </motion.h1>
@@ -98,4 +105,3 @@ export default function Hero() {
     </div>
   )
 }
-
