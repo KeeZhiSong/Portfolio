@@ -12,7 +12,7 @@ const skillCategories = [
   {
     title: "Programming Languages",
     skills: ["Python", "Java", "C", "Assembly"],
-  },  
+  },
   {
     title: "Technologies/Frameworks",
     skills: ["React", "Figma", "AWS", "CSS", "HTML"],
@@ -34,7 +34,16 @@ export default function MySkills() {
           className="text-center"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">My Skills</span>
+            <span
+              className="text-transparent bg-clip-text"
+              style={{
+                background: "linear-gradient(to right, #4facfe, #00f2fe)",
+                WebkitBackgroundClip: "text",
+                backgroundClip: "text",
+              }}
+            >
+              My Skills
+            </span>
             <span className="ml-2">💻</span>
           </h2>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
@@ -97,4 +106,3 @@ export default function MySkills() {
     </section>
   )
 }
-
